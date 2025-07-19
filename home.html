@@ -27,36 +27,51 @@
             <div class="flex items-center justify-center">
               <img src="./Payoo-MFS-Resources/Group.png" alt="" />
             </div>
-            <!-- balance -->
+            <!-- balance  -->
 
             <div class="stat w-full">
               <div class="stat-title">Account balance</div>
-              <div class="stat-value text-black">$89,400</div>
+              <div class="stat-value text-black">
+                $ <span id="main-balance"> 89400 </span>
+              </div>
             </div>
+            <!-- balance end -->
 
+            <!-- logout button -->
             <div class="stat flex items-center justify-center">
               <div class="stat-actions">
                 <button id="logout-btn" class="btn btn-xs">Logout</button>
               </div>
             </div>
+            <!-- logout button end -->
           </div>
-          <!-- divider  -->
-          <div class="divider"></div>
 
+          <!-- balance display end -->
+
+          <!-- 1st divider start -->
+          <div class="divider"></div>
+          <!--1st divider end -->
+
+          <!-- add fund and cash out button start -->
           <div class="stat flex items-center justify-center">
             <div class="stat-actions">
-              <button id="" class="btn btn-primary">Add Fund</button>
-              <button id="" class="btn btn-secondory">Cash Out</button>
+              <button id="fund-bt" class="btn btn-primary">Add Fund</button>
+
+              <button id="cash-ou" class="btn btn-secondory">Cash Out</button>
             </div>
           </div>
-          <div class="divider"></div>
-          <!-- divider end -->
 
-          <!-- add money input field -->
+          <!-- add fund and cash out button end -->
+
+          <!-- 2nd divider start -->
+          <div class="divider"></div>
+          <!--2nd divider end -->
+
+          <!-- add money input field start -->
           <form action="">
             <div class="card-body text-black form-control">
               <fieldset class="fieldset">
-                <label class="label">Amoount</label>
+                <label class="label">Amount</label>
                 <input
                   id="amount"
                   type="text"
@@ -73,7 +88,19 @@
                   placeholder="Pin"
                 />
                 <div><a class="link link-hover">Forgot Pin?</a></div>
-                <button id="" class="btn btn-primary">Add Fund</button>
+                <!-- add and cash out button start in input field -->
+                <div class="stat flex items-center justify-center">
+                  <div class="stat-actions">
+                    <button id="fund-btn" class="btn btn-primary">
+                      Add Fund
+                    </button>
+
+                    <button id="cash-out" class="btn btn-secondory">
+                      Cash Out
+                    </button>
+                  </div>
+                </div>
+                <!-- add abd cash out button start in input field -->
               </fieldset>
             </div>
           </form>
@@ -83,7 +110,7 @@
       </div>
       <!-- mockup phone end -->
     </main>
-
+    <script src="./script.js"></script>
     <script src="./home.js"></script>
   </body>
 </html>
