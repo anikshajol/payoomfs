@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="">
+    <!-- balance section -->
+
+    <main class="login-page home-page">
+      <div class="mockup-phone bg-white text-black">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white grid place-content-center">
+          <!-- Balance part -->
+          <div
+            class="stats px-[20px] border-0 bg-base-100 border-base-300 border"
+          >
+            <!-- logo -->
+            <div class="flex items-center justify-center">
+              <img src="./Payoo-MFS-Resources/Group.png" alt="" />
+            </div>
+            <!-- balance -->
+
+            <div class="stat w-full">
+              <div class="stat-title">Account balance</div>
+              <div class="stat-value text-black">$89,400</div>
+            </div>
+
+            <div class="stat flex items-center justify-center">
+              <div class="stat-actions">
+                <button id="logout-btn" class="btn btn-xs">Logout</button>
+              </div>
+            </div>
+          </div>
+          <!-- divider  -->
+          <div class="divider"></div>
+
+          <div class="stat flex items-center justify-center">
+            <div class="stat-actions">
+              <button id="" class="btn btn-primary">Add Fund</button>
+              <button id="" class="btn btn-secondory">Cash Out</button>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- divider end -->
+
+          <!-- add money input field -->
+          <form action="">
+            <div class="card-body text-black form-control">
+              <fieldset class="fieldset">
+                <label class="label">Amoount</label>
+                <input
+                  id="amount"
+                  type="text"
+                  required
+                  class="input"
+                  placeholder="Amount"
+                />
+                <label class="label">Pin</label>
+                <input
+                  id="pin"
+                  type="password"
+                  required
+                  class="input"
+                  placeholder="Pin"
+                />
+                <div><a class="link link-hover">Forgot Pin?</a></div>
+                <button id="" class="btn btn-primary">Add Fund</button>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+
+        <!-- add money button -->
+      </div>
+      <!-- mockup phone end -->
+    </main>
+
+    <script src="./home.js"></script>
+  </body>
+</html>

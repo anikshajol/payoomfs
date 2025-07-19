@@ -1,0 +1,12 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+}
+
+.login-page-bg img {
+  position: relative;
+  bottom: -200px;
+}
+.login-form {
+  position: relative;
+}
