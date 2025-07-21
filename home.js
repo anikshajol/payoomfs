@@ -46,7 +46,6 @@ document.getElementById("cash-out").addEventListener("click", function (event) {
 
   if (pinInputValue === 1234) {
     document.getElementById("main-balance").innerText = newBalance;
-    amountInput.value = "";
   } else {
     alert("Your pin number is incorrect");
   }
