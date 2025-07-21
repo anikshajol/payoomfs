@@ -55,7 +55,7 @@
           <!-- add fund and cash out button start -->
           <div class="stat flex items-center justify-center">
             <div class="stat-actions">
-              <button id="fund-bt" class="btn btn-primary">Add Fund</button>
+              <button id="toggle-add-fund" class="btn">Add Fund</button>
 
               <button id="cash-ou" class="btn btn-secondory">Cash Out</button>
             </div>
@@ -68,7 +68,7 @@
           <!--2nd divider end -->
 
           <!-- add money input field start -->
-          <form action="">
+          <form id="money-add-input" class="hidden" action="">
             <div class="card-body text-black form-control">
               <fieldset class="fieldset">
                 <label class="label">Amount</label>
@@ -94,8 +94,38 @@
                     <button id="fund-btn" class="btn btn-primary">
                       Add Fund
                     </button>
-
-                    <button id="cash-out" class="btn btn-secondory">
+                  </div>
+                </div>
+                <!-- add abd cash out button start in input field -->
+              </fieldset>
+            </div>
+          </form>
+          <!-- add money input field end -->
+          <!-- cash out input field start -->
+          <form id="cash-out-input" class="hidden" action="">
+            <div class="card-body text-black form-control">
+              <fieldset class="fieldset">
+                <label class="label">Amount</label>
+                <input
+                  id="amount"
+                  type="text"
+                  required
+                  class="input"
+                  placeholder="Amount"
+                />
+                <label class="label">Pin</label>
+                <input
+                  id="pin"
+                  type="password"
+                  required
+                  class="input"
+                  placeholder="Pin"
+                />
+                <div><a class="link link-hover">Forgot Pin?</a></div>
+                <!-- add and cash out button start in input field -->
+                <div class="stat flex items-center justify-center">
+                  <div class="stat-actions">
+                    <button id="cash-out" class="btn btn-primary">
                       Cash Out
                     </button>
                   </div>
@@ -104,6 +134,7 @@
               </fieldset>
             </div>
           </form>
+          <!-- cash out input field end -->
         </div>
 
         <!-- add money button -->

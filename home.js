@@ -47,11 +47,8 @@ document.getElementById("cash-out").addEventListener("click", function (event) {
   if (pinInputValue === 1234) {
     document.getElementById("main-balance").innerText = newBalance;
     amountInput.value = "";
-    pinInput.value = "";
   } else {
     alert("Your pin number is incorrect");
-    amountInput.value = "";
-    pinInput.value = "";
   }
 });
 
@@ -59,4 +56,37 @@ document.getElementById("cash-out").addEventListener("click", function (event) {
 
 document.getElementById("logout-btn").addEventListener("click", function () {
   window.location.href = "./index.html";
+});
+
+// add money toggle btn
+document
+  .getElementById("toggle-add-fund")
+  .addEventListener("click", function () {
+    const moneyAddField = document.getElementById("money-add-input");
+    const cashOutInput = document.getElementById("cash-out-input");
+
+    cashOutInput.classList.add("hidden");
+    moneyAddField.classList.remove("hidden");
+    const addMoneyBtn = document.getElementById("toggle-add-fund");
+    addMoneyBtn.classList.add("btn-primary");
+    const cashOut = document.getElementById("cash-ou");
+    cashOut.classList.remove("btn-primary");
+  });
+
+// cashout toggle btn\
+
+document.getElementById("cash-ou").addEventListener("click", function () {
+  const cashOutInput = document.getElementById("cash-out-input");
+
+  const moneyAddField = document.getElementById("money-add-input");
+
+  moneyAddField.classList.add("hidden");
+
+  cashOutInput.classList.remove("hidden");
+
+  const cashOut = document.getElementById("cash-ou");
+  const addMoneyBtn = document.getElementById("toggle-add-fund");
+  addMoneyBtn.classList.remove("btn-primary");
+
+  cashOut.classList.add("btn-primary");
 });
