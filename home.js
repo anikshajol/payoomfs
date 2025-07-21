@@ -54,3 +54,9 @@ document.getElementById("cash-out").addEventListener("click", function (event) {
     pinInput.value = "";
   }
 });
+
+// logout btn
+
+document.getElementById("logout-btn").addEventListener("click", function () {
+  window.location.href = "./index.html";
+});
